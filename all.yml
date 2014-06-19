@@ -32,6 +32,14 @@
   - role: git
     git_user_name: Daniel Cannon
     git_user_email: daniel@danielcannon.co.uk
+#  - role: dotfiles
+  - role: brew_package
+    tap: thoughtbot/formulae
+    package_name: gitsh
+  - role: brew_package
+    package_name: git-extras
+  - role: brew_package
+    package_name: git-flow
   - role: brew_package
     package_name: vim
   ## languages
@@ -70,22 +78,28 @@
     package_name: transmit
   - role: cask_package
     package_name: the-unarchiver
-  - role: cask_package
-    package_name: vagrant
+  ## vms
   - role: cask_package
     package_name: virtualbox
+  - role: cask_package
+    package_name: vagrant
   ## browsers
   - role: cask_package
     package_name: firefox
   - role: cask_package
     package_name: google-chrome
   ## chat
+  - role: cask_package
+    package_name: skype
   ## text editors
   - role: cask_package
     package_name: sublime-text-3
-  ## media
+  ## entertainment
   - role: cask_package
     package_name: vlc
-  ## other
- - role: cask_package
+  ## sync
+  - role: cask_package
     package_name: dropbox
+  - role: cask_package
+    package_name: google-drive
+

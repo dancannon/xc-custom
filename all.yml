@@ -5,16 +5,10 @@
   # osx config
   - role: dock
     apps:
-    - /Applications/Firefox.app
-    - /Applications/Airmail.app
-    - /Applications/Dashlane.app
-    - /Applications/Spotify.app
-    - /Applications/Airmail.app
-    - "/Applications/Adobe Photoshop CC/Adobe Photoshop CC.app"
-    - "/Applications/Adobe Illustrator CC/Adobe Illustrator.app"
-    - /Applications/Atom.app
+    - /Applications/Chrome.app
+    - "/Applications/Sublime Text.app"
     - /Applications/iTerm.app
-    - /Applications/Dash.app
+    - /Applications/Spotify.app
     folders:
     - path: ~/
     - path: ~/Documents
@@ -36,36 +30,62 @@
   # cli
   # shell tooling
   - role: git
-    git_user_name: Bob Bob
-    git_user_email: bob.bob@example.com
-  - role: legit
-  - role: hub
+    git_user_name: Daniel Cannon
+    git_user_email: daniel@danielcannon.co.uk
   - role: brew_package
     package_name: vim
   ## languages
   - role: brew_package
+    package_name: go
+  - role: brew_package
     package_name: node
-  - role: rbenv
-  - role: npm_package
-    package_name: grunt
-  - role: npm_package
-    package_name: bower
   - role: cask_package
     package_name: java
-  - role: brew_package
-    package_name: android-sdk
-  ## databases
-  - role: brew_package
-    package_name: postgres
-  - role: brew_package
-    package_name: mongodb
-  ## deployment
-  - role: brew_package
-    package_name: heroku-toolbelt
-  # - role: brew_package
-  #   package_name: ansible # Hey ! Already there !
 
   # gui
+  ## utilities
+  - role: cask_package
+    package_name: alfred
+  - role: cask_package
+    package_name: bartender
+  - role: cask_package
+    package_name: bettertouchtool
+  - role: cask_package
+    package_name: caffeine
+  - role: cask_package
+    package_name: flux
+  - role: cask_package
+    package_name: iterm2
+  - role: cask_package
+    package_name: keyremap4macbook
+  - role: cask_package
+    package_name: onepassword
+  - role: cask_package
+    package_name: sizeup
+  - role: cask_package
+    package_name: sourcetree
+  - role: cask_package
+    package_name: transmission
+  - role: cask_package
+    package_name: transmit
+  - role: cask_package
+    package_name: the-unarchiver
+  - role: cask_package
+    package_name: vagrant
+  - role: cask_package
+    package_name: virtualbox
+  ## browsers
+  - role: cask_package
+    package_name: firefox
+  - role: cask_package
+    package_name: google-chrome
+  ## chat
   ## text editors
   - role: cask_package
-    package_name: atom
+    package_name: sublime-text-3
+  ## media
+  - role: cask_package
+    package_name: vlc
+  ## other
+ - role: cask_package
+    package_name: dropbox
